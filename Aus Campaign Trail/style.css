@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+.container > div {
+    width: 20%;
+}
+.infoBox {
+    border: 5px outset black;
+    text-align: center;
+}
+.backButton {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#mapButton {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+}
+.forwardButton {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#questionButton {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+h1 {
+    font-size: 20px;
+}
+#answerButton1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    width: 250px;
+    height: 200px;
+}
+#answerButton2 {
+    position: fixed;
+    bottom: 0;
+    left: 333px;
+    font-size: 20px;
+    width: 250px;
+    height: 200px;
+}
+#answerButton3 {
+    position: fixed;
+    bottom: 0;
+    left: 666px;
+    font-size: 20px;
+    width: 250px;
+    height: 200px;
+}
+#answerButton4 {
+    position: fixed;
+    bottom: 0;
+    left: 999px;
+    font-size: 20px;
+    width: 250px;
+    height: 200px;
+}
+#advisorFeedback {
+    position: fixed;
+    margin: auto;
+}
+#closeButton {
+    margin: auto;
+}

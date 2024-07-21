@@ -1,0 +1,65 @@
+{
+    "1": {
+        "question": "Scott Morrison has had a heart attack and fucking died. What do?",
+        "answers": {
+            "one": {
+                "text": "Publish a statement of heartfelt condolences :(",
+                "effect": { "ideology": 0, "social": 0, "affluence": 0.5 },
+                "feedback": "This the expected response, but some appreciate the empathy shown."
+            },
+            "two": { "text": "Don't mention the war!", "effect": { "ideology": 2, "social": -0.5, "affluence": -1 }, "feedback": "This move looks a little callous. It doesn't play very well." },
+            "three": {
+                "text": "Mock him publically and shame his family",
+                "effect": { "ideology": -2, "social": -1, "affluence": -3 },
+                "feedback": "This response leads to public outrage among most moderates. This will really hurt you."
+            },
+            "four": {
+                "text": "Seize the opportunity, drone striking every liberal party member",
+                "effect": { "ideology": 50, "social": 50, "affluence": 50 },
+                "feedback": "YES SIR! GOD BLESS THE ETERNAL REGIME-PILLED REIGN OF FIRST CITIZEN ALBO"
+            }
+        }
+    },
+    "2": {
+        "question": "TESTQUESTION2",
+        "answers": {
+            "one": {
+                "text": "TESTANSWER1",
+                "effect": { "ideology": 0, "social": 0, "affluence": 2 },
+                "feedback": "TESTFEEDBACK1"
+            },
+            "two": { "text": "TESTANSWER2", "effect": { "ideology": 2, "social": -0.5, "affluence": -1 }, "feedback": "TESTFEEDBACK2" },
+            "three": {
+                "text": "TESTANSWER3",
+                "effect": { "ideology": -2, "social": -1, "affluence": -3 },
+                "feedback": "TESTFEEDBACK3"
+            },
+            "four": {
+                "text": "TESTANSWER4",
+                "effect": { "ideology": 50, "social": 50, "affluence": 50 },
+                "feedback": "TESTFEEDBACK4"
+            }
+        }
+    },
+    "3": {
+        "question": "TESTQUESTION3",
+        "answers": {
+            "one": {
+                "text": "TESTANSWER1",
+                "effect": { "ideology": 0, "social": 0, "affluence": 2 },
+                "feedback": "TESTFEEDBACK1"
+            },
+            "two": { "text": "TESTANSWER2", "effect": { "ideology": 2, "social": -0.5, "affluence": -1 }, "feedback": "TESTFEEDBACK2" },
+            "three": {
+                "text": "TESTANSWER3",
+                "effect": { "ideology": -2, "social": -1, "affluence": -3 },
+                "feedback": "TESTFEEDBACK3"
+            },
+            "four": {
+                "text": "TESTANSWER4",
+                "effect": { "ideology": 50, "social": 50, "affluence": 50 },
+                "feedback": "TESTFEEDBACK4"
+            }
+        }
+    }
+}

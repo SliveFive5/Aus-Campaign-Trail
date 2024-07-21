@@ -1,0 +1,4 @@
+{
+    "grey": { "polling": { "labor": 30, "liberal": 40, "green": 10 }, "weighting": { "ideology": 0.5, "social": 3, "affluence": -2 }, "id": "path12876-9" },
+    "lingiari": { "polling": { "labor": 60, "liberal": 38, "green": 2 }, "weighting": { "ideology": 3, "social": 1, "affluence": -3 }, "id": "path39489-5" }
+}

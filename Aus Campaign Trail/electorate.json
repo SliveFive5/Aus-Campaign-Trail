@@ -1,4 +1,23 @@
 {
-    "grey": { "polling": { "labor": 30, "liberal": 40, "green": 10 }, "weighting": { "ideology": 0.5, "social": 3, "affluence": -2 }, "id": "path12876-9" },
-    "lingiari": { "polling": { "labor": 60, "liberal": 38, "green": 2 }, "weighting": { "ideology": 3, "social": 1, "affluence": -3 }, "id": "path39489-5" }
+    "grey": { "polling": { "labor": 21.56, "liberal": 42.74, "green": 2.56, "other": 33.14 }, "weighting": { "economy": 1, "social": -3, "affluence": -3, "climate": -3 }, "id": "path12876-9" },
+    "lingiari": { "polling": { "labor": 40, "liberal": 31.73, "green": 7.71, "other": 22 }, "weighting": { "economy": 3, "social": 2, "affluence": -3, "climate": 2 }, "id": "path39489-5" },
+    "solomon": { "polling": { "labor": 41, "liberal": 35, "green": 10, "other": 14 }, "weighting": { "economy": 3, "social": 3, "affluence": 1, "climate": 3 }, "id": "path104-1-4" },
+    "kennedy": { "polling": { "labor": 20, "liberal": 33, "green": 5, "other": 42 }, "weighting": { "economy": 3, "social": -3, "affluence": -3, "climate": -3 }, "id": "path36166-2" },
+    "leichhardt": { "polling": { "labor": 28, "liberal": 40, "green": 9, "other": 24 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path140-2" },
+    "herbert": { "polling": { "labor": 30, "liberal": 35, "green": 5, "other": 29 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path43647-2" },
+    "dawson": { "polling": { "labor": 33, "liberal": 43, "green": 5, "other": 19 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path36274-3" },
+    "melbourne": { "polling": { "labor": 25, "liberal": 15, "green": 50, "other": 10 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path258-9" },
+    "capricornia": { "polling": { "labor": 39, "liberal": 40, "green": 5, "other": 6 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path114-2-4" },
+    "flynn": { "polling": { "labor": 34, "liberal": 37, "green": 3, "other": 26 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path126-1" },
+    "durak": { "polling": { "labor": 26, "liberal": 58, "green": 10, "other": 6 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path20230-5" },
+    "maranoa": { "polling": { "labor": 18, "liberal": 49, "green": 3, "other": 30 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path146-7" },
+    "o'connor": { "polling": { "labor": 21, "liberal": 61, "green": 10, "other": 8 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path23080-5" },
+    "parkes": { "polling": { "labor": 28, "liberal": 60, "green": 6, "other": 6 }, "weighting": { "economy": 1000, "climate": 1, "social": 2, "affluence": 3 }, "id": "path68-8-3" },
+    "macnamara": { "polling": { "labor": 32, "liberal": 37, "green": 25, "other": 6 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path250-9" },
+    "goldstein": { "polling": { "labor": 22, "liberal": 56, "green": 16, "other": 6 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path226-7" },
+    "kooyong": { "polling": { "labor": 20, "liberal": 58, "green": 19, "other": 2 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path244-1-4" },
+    "higgins": { "polling": { "labor": 16, "liberal": 52, "green": 25, "other": 6 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path232-6" },
+    "wills": { "polling": { "labor": 38, "liberal": 22, "green": 31, "other": 9 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path270-9" },
+    "jagajaga": { "polling": { "labor": 39, "liberal": 41, "green": 15, "other": 5 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path242-1-3" },
+    "hotham": { "polling": { "labor": 46, "liberal": 37, "green": 9, "other": 8 }, "weighting": { "economy": 3, "social": 1, "affluence": -3, "climate": -3 }, "id": "path236-2" }
 }

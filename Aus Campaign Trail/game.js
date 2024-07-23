@@ -4,7 +4,9 @@ let questionCount = 0;
 document.addEventListener("DOMContentLoaded", async function () {
     parties = {
         labor: { leader: "Anthony Albanese", colour: "red" },
-        liberal: { hue: `216`, colour: "blue" }
+        liberal: { colour: "blue" },
+        green: { colour: "lightgreen" },
+        other: { colour: "purple" }
         // also im storing the colour as a hue value to be used as HSL colour, so i can just change the opacity based on percentages
     };
     let res = await fetch("./electorate.json");
@@ -13,14 +15,15 @@ document.addEventListener("DOMContentLoaded", async function () {
     let ques = await fetch("./question.json");
     quesData = await ques.json();
     // only do this when the document is loadded
-
-    // gameState = { lingiari: { labor: 76, liberal: 23 }, grey: { labor: 45, liberal: 55 } }; // this will be updated as the game runs
     updateDisplay();
+    // gameState = { lingiari: { labor: 76, liberal: 23 }, grey: { labor: 45, liberal: 55 } }; // this will be updated as the game runs
 
-    console.log(pollData.labor);
+    document.addEventListener("click", (event) => {
+        console.log(event?.target?.id);
+    });
+
     document.addEventListener("mouseover", (mouseover) => {
         let id = mouseover.target.id;
-        console.log(id);
         const seatIDElement = document.getElementById("seatName");
         const seatPollElement = document.getElementById("pollData");
         const seatWeightElement = document.getElementById("weightData");
@@ -29,22 +32,22 @@ document.addEventListener("DOMContentLoaded", async function () {
             let seatName = seatNames[i]; // "grey"
             let pollData = gameState[seatName].polling;
             let weightData = gameState[seatName].weighting;
-            if (weightData.ideology <= 1 && weightData.ideology > 0) {
+            if (weightData.economy <= 1 && weightData.economy > 0) {
                 ideoLabel = "Slightly Liberal";
             }
-            if (weightData.ideology < 0 && weightData.ideology >= -1) {
+            if (weightData.economy < 0 && weightData.economy >= -1) {
                 ideoLabel = "Slightly Conservative";
             }
-            if (weightData.ideology > 1 && weightData.ideology <= 2) {
+            if (weightData.economy > 1 && weightData.economy <= 2) {
                 ideoLabel = "Liberal";
             }
-            if (weightData.ideology < -1 && weightData.ideology >= -2) {
+            if (weightData.economy < -1 && weightData.economy >= -2) {
                 ideoLabel = "Conservative";
             }
-            if (weightData.ideology > 2 && weightData.ideology <= 3) {
+            if (weightData.economy > 2 && weightData.economy <= 3) {
                 ideoLabel = "Very Liberal";
             }
-            if (weightData.ideology < -2 && weightData.ideology >= -3) {
+            if (weightData.economy < -2 && weightData.economy >= -3) {
                 ideoLabel = "Very Conservative";
             }
             if (id === gameState[seatName].id) {
@@ -52,26 +55,10 @@ document.addEventListener("DOMContentLoaded", async function () {
                 seatIDElement.innerText = seatName;
                 // var listPollData = Object.entries(pollData);
                 seatPollElement.innerText = `labor: ${pollData.labor}%\nliberal: ${pollData.liberal}%\nGreen: ${pollData.green}%`;
-                seatWeightElement.innerText = `ideology: ${ideoLabel}\nsocial: ${weightData.social}\naffluence: ${weightData.affluence}`;
+                seatWeightElement.innerText = `economy: ${ideoLabel}\nsocial: ${weightData.social}\naffluence: ${weightData.affluence}`;
             }
         }
     });
-
-    let seatNames = Object.keys(gameState); // [grey, lingiari]
-    for (let i = 0; i < seatNames.length; i++) {
-        let seatName = seatNames[i]; // "grey"
-        let id = gameState[seatName]?.id;
-        let seatElement = document.getElementById(id);
-        let polling = gameState[seatName].polling;
-        let partyNames = Object.keys(polling);
-        let highestParty = partyNames[0];
-        for (let i = 1; i < partyNames.length; i++) {
-            let partyName = partyNames[i];
-            if (polling[partyName] > polling[highestParty]) highestParty = partyName;
-        }
-        marginColor = `${polling[highestParty]}%`;
-        seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
-    }
 });
 
 function closeDialog() {
@@ -85,13 +72,13 @@ function openDialog() {
 }
 function openAnsDialog(buttonNumber) {
     let seatNames = Object.keys(gameState);
-    ideoEffect = quesData[questionCount].answers[buttonNumber].effect.ideology;
+    ideoEffect = quesData[questionCount].answers[buttonNumber].effect.economy;
     socEffect = quesData[questionCount].answers[buttonNumber].effect.social;
     affEffect = quesData[questionCount].answers[buttonNumber].effect.affluence;
     for (let i = 0; i < seatNames.length; i++) {
         let seatName = seatNames[i];
         let weightData = gameState[seatName].weighting;
-        ideoPollEffect = ideoEffect * weightData.ideology;
+        ideoPollEffect = ideoEffect * weightData.economy;
         socPollEffect = socEffect * weightData.social;
         affPollEffect = affEffect * weightData.affluence;
         let pollData = gameState[seatName].polling;
@@ -100,7 +87,7 @@ function openAnsDialog(buttonNumber) {
         pollData.liberal = pollData.liberal - pollChange;
     }
     let something = document.getElementById("textFeedback");
-    something.innerText = quesData[questionCount].answers.one.feedback;
+    something.innerText = quesData[questionCount].answers[buttonNumber].feedback;
     let dialog = document.getElementById("advisorFeedback");
     dialog.open = "open";
     document.getElementById("answerButton1").disabled = true;
@@ -108,8 +95,11 @@ function openAnsDialog(buttonNumber) {
     document.getElementById("answerButton3").disabled = true;
     document.getElementById("answerButton4").disabled = true;
     document.getElementById("mapButton").disabled = true;
+
+    localStorage.setItem("campaign-trail-game-state", JSON.stringify(gameState));
 }
 function closeAnsDialog() {
+    updateDisplay();
     let seatNames = Object.keys(gameState);
     document.getElementById("answerButton1").disabled = null;
     document.getElementById("answerButton2").disabled = null;
@@ -146,7 +136,7 @@ function nextRound() {
         document.getElementById("visitHeader").hidden = true;
         let confirmDialog = document.getElementById("confirmation");
         confirmDialog.open = null;
-        updateDisplay();
+        // updateDisplay();
     } else {
         window.location = "electionDay.html";
     }
@@ -167,4 +157,20 @@ function updateDisplay() {
     jsTextAnswer2.innerText = quesData[questionCount].answers.two.text;
     jsTextAnswer3.innerText = quesData[questionCount].answers.three.text;
     jsTextAnswer4.innerText = quesData[questionCount].answers.four.text;
+
+    let seatNames = Object.keys(gameState); // [grey, lingiari]
+    for (let i = 0; i < seatNames.length; i++) {
+        let seatName = seatNames[i]; // "grey"
+        let id = gameState[seatName]?.id;
+        let seatElement = document.getElementById(id);
+        let polling = gameState[seatName].polling;
+        let partyNames = Object.keys(polling);
+        let highestParty = partyNames[0];
+        for (let i = 1; i < partyNames.length; i++) {
+            let partyName = partyNames[i];
+            if (polling[partyName] > polling[highestParty]) highestParty = partyName;
+        }
+        marginColor = `${polling[highestParty]}%`;
+        seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
+    }
 }

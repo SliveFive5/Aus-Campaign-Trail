@@ -2,9 +2,11 @@
     display: flex;
     width: 100%;
 }
+
 .container > div {
     width: 20%;
 }
+
 .infoBox {
     border: 5px outset black;
     text-align: center;

@@ -85,5 +85,20 @@
     "Gellibrand": { "id": "path222-8", "polling": { "labor": 47, "liberal": 27, "green": 21, "other": 5 }, "weighting": { "economy": 3, "social": 1, "taxes": 2, "climate": 3 } },
     "Lalor": { "id": "path248-0", "polling": { "labor": 52, "liberal": 31, "green": 10, "other": 7 }, "weighting": { "economy": 2, "social": 2, "taxes": 2, "climate": 2 } },
     "Fraser": { "id": "path220-3", "polling": { "labor": 50, "liberal": 29, "green": 10, "other": 7 }, "weighting": { "economy": 2, "social": 2, "taxes": 2, "climate": 2 } },
-    "Maribyrnong": { "id": "path254-8", "polling": { "labor": 51, "liberal": 32, "green": 10, "other": 7 }, "weighting": { "economy": 2, "social": 2, "taxes": 1, "climate": 3 } }
+    "Maribyrnong": { "id": "path254-8", "polling": { "labor": 51, "liberal": 32, "green": 10, "other": 7 }, "weighting": { "economy": 2, "social": 2, "taxes": 1, "climate": 3 } },
+    "Cooper": { "id": "path208-1", "polling": { "labor": 53, "liberal": 30, "green": 10, "other": 7 }, "weighting": { "economy": 3, "social": 3, "taxes": 2, "climate": 3 } },
+    "Isaacs": { "id": "path240-9", "polling": { "labor": 44, "liberal": 40, "green": 10, "other": 6 }, "weighting": { "economy": 3, "social": 2, "taxes": 2, "climate": 3 } },
+    "Dunkley": { "id": "path216-3", "polling": { "labor": 33, "liberal": 43, "green": 10, "other": 14 }, "weighting": { "economy": -1, "social": 1, "taxes": -1, "climate": 1 } },
+    "Holt": { "id": "path234-1", "polling": { "labor": 54, "liberal": 30, "green": 6, "other": 10 }, "weighting": { "economy": 2, "social": 3, "taxes": 2, "climate": 1 } },
+    "Bruce": { "id": "path200-2", "polling": { "labor": 44, "liberal": 40, "green": 7, "other": 9 }, "weighting": { "economy": 1, "social": 1, "taxes": 1, "climate": 1 } },
+    "Aston": { "id": "path194-8", "polling": { "labor": 51, "liberal": 31, "green": 8, "other": 10 }, "weighting": { "economy": 3, "social": 2, "taxes": 3, "climate": 2 } },
+    "Deakin": { "id": "path214-2", "polling": { "labor": 31, "liberal": 50, "green": 12, "other": 7 }, "weighting": { "economy": 2, "social": 2, "taxes": 3, "climate": 4 } },
+    "Menzies": { "id": "path260-9", "polling": { "labor": 25, "liberal": 52, "green": 9, "other": 14 }, "weighting": { "economy": -1, "social": 1, "taxes": -1, "climate": 1 } },
+    "Scullin": { "id": "path266-2-9", "polling": { "labor": 57, "liberal": 28, "green": 8, "other": 7 }, "weighting": { "economy": 3, "social": 3, "taxes": 3, "climate": 3 } },
+    "Flinders": { "id": "path32074-4", "polling": { "labor": 27, "liberal": 52, "green": 11, "other": 10 }, "weighting": { "economy": 2, "social": 1, "taxes": 3, "climate": 2 } },
+    "Calwell": { "id": "path202-9", "polling": { "labor": 57, "liberal": 28, "green": 8, "other": 7 }, "weighting": { "economy": 2, "social": 3, "taxes": 3, "climate": 3 } },
+    "Chisholm": { "id": "path206-9", "polling": { "labor": 36, "liberal": 45, "green": 12, "other": 7 }, "weighting": { "economy": 1, "social": 2, "taxes": -1, "climate": 1 } },
+    "Gorton": { "id": "path228-5", "polling": { "labor": 62, "liberal": 28, "green": 10, "other": 0 }, "weighting": { "economy": 3, "social": 1, "taxes": 3, "climate": 2 } },
+    "Hawke": { "id": "path230-9", "polling": { "labor": 45, "liberal": 37, "green": 8, "other": 10 }, "weighting": { "economy": 3, "social": -1, "taxes": 3, "climate": -1 } },
+    "Nicholls": { "id": "path266-4", "polling": { "labor": 28, "liberal": 45, "green": 8, "other": 19 }, "weighting": { "economy": -2, "social": -2, "taxes": -3, "climate": -2 } }
 }

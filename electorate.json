@@ -116,5 +116,6 @@
     "Hume": { "id": "path12877-9", "polling": { "labor": 32, "liberal": 54, "green": 7, "other": 7 }, "weighting": { "economy": -2, "social": -1, "taxes": -2, "climate": -2 } },
     "Calare": { "id": "path14-4-8", "polling": { "labor": 27, "liberal": 48, "green": 7, "other": 18 }, "weighting": { "economy": -2, "social": -1, "taxes": -2, "climate": -2 } },
     "Hunter": { "id": "path42-2", "polling": { "labor": 52, "liberal": 26, "green": 7, "other": 15 }, "weighting": { "economy": 2, "social": 1, "taxes": 2, "climate": 2 } },
-    "Paterson": { "id": "path72-4", "polling": { "labor": 46, "liberal": 32, "green": 6, "other": 16 }, "weighting": { "economy": 3, "social": 1, "taxes": 2, "climate": 1 } }
+    "Paterson": { "id": "path72-4", "polling": { "labor": 46, "liberal": 32, "green": 6, "other": 16 }, "weighting": { "economy": 3, "social": 1, "taxes": 2, "climate": 1 } },
+    "MacQuarie": { "id": "path3981-4", "polling": { "labor": 36, "liberal": 38, "green": 11, "other": 15 }, "weighting": { "economy": 1, "social": -1, "taxes": -1, "climate": 1 } }
 }

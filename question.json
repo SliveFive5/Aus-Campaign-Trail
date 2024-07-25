@@ -50,7 +50,7 @@
         }
     },
     "3": {
-        "question": "why is your mum so fat?",
+        "question": "why is my mum so fat?",
         "answers": {
             "one": {
                 "text": "because she eats too much",
@@ -58,7 +58,7 @@
                 "feedback": "that is racial profiling! the electorate now hates you you xenophobic bitch! she has a biological disorder that makes her naturally fat"
             },
             "two": {
-                "text": "i wouldnt want to comment on a specific circumstance",
+                "text": "Since i am not a health professional, I wouldn't want to comment on a specific circumstance, but I wish your mother a speedy recovery and I advise her to seek health advice.",
                 "effect": { "economy": 0, "social": -50000, "taxes": -0 },
                 "feedback": "you question dodging swine! people hate you"
             },

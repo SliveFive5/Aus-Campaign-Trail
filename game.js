@@ -1,5 +1,6 @@
 var quesData = null;
 let questionCount = 0;
+const NUMBER_OF_QUESTIONS = 3;
 
 document.addEventListener("DOMContentLoaded", async function () {
     parties = {
@@ -128,7 +129,7 @@ function closeAnsDialog() {
 }
 function nextRound() {
     document.getElementById("confirmation").open = null;
-    if (questionCount <= 2) {
+    if (questionCount <= NUMBER_OF_QUESTIONS) {
         //Remember to change that to whatever the question count turns out to be
         let dialog = document.querySelector("dialog");
         dialog.open = "open";

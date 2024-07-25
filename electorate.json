@@ -1,5 +1,5 @@
 {
-    "Grey": { "polling": { "labor": 21.56, "liberal": 42.74, "green": 2.56, "other": 33.14 }, "weighting": { "economy": 1, "social": -3, "taxes": -3, "climate": -3 }, "id": "path12876-9" },
+    "Grey": { "polling": { "labor": 21.56, "liberal": 42.74, "green": 2.56, "other": 33.14 }, "weighting": { "economy": 100, "social": -3, "taxes": -3, "climate": -3 }, "id": "path12876-9" },
     "Lingiari": { "polling": { "labor": 40, "liberal": 31.73, "green": 7.71, "other": 22 }, "weighting": { "economy": 3, "social": 2, "taxes": -3, "climate": 2 }, "id": "path39489-5" },
     "Solomon": { "polling": { "labor": 41, "liberal": 35, "green": 10, "other": 14 }, "weighting": { "economy": 3, "social": 3, "taxes": 1, "climate": 3 }, "id": "path104-1-4" },
     "Kennedy": { "polling": { "labor": 20, "liberal": 33, "green": 5, "other": 42 }, "weighting": { "economy": 3, "social": -3, "taxes": -3, "climate": -3 }, "id": "path36166-2" },
@@ -100,5 +100,17 @@
     "Chisholm": { "id": "path206-9", "polling": { "labor": 36, "liberal": 45, "green": 12, "other": 7 }, "weighting": { "economy": 1, "social": 2, "taxes": -1, "climate": 1 } },
     "Gorton": { "id": "path228-5", "polling": { "labor": 62, "liberal": 28, "green": 10, "other": 0 }, "weighting": { "economy": 3, "social": 1, "taxes": 3, "climate": 2 } },
     "Hawke": { "id": "path230-9", "polling": { "labor": 45, "liberal": 37, "green": 8, "other": 10 }, "weighting": { "economy": 3, "social": -1, "taxes": 3, "climate": -1 } },
-    "Nicholls": { "id": "path266-4", "polling": { "labor": 28, "liberal": 45, "green": 8, "other": 19 }, "weighting": { "economy": -2, "social": -2, "taxes": -3, "climate": -2 } }
+    "Nicholls": { "id": "path266-4", "polling": { "labor": 28, "liberal": 45, "green": 8, "other": 19 }, "weighting": { "economy": -2, "social": -2, "taxes": -3, "climate": -2 } },
+    "Fenner": { "id": "path19634-1", "polling": { "labor": 60, "liberal": 10, "green": 30, "other": 0 }, "weighting": { "economy": 3, "social": 3, "taxes": 3, "climate": 3 } },
+    "Bean": { "id": "path5728-8", "polling": { "labor": 46, "liberal": 31, "green": 15, "other": 8 }, "weighting": { "economy": 2, "social": 3, "taxes": 2, "climate": 2 } },
+    "Canberra": { "id": "path19656-4", "polling": { "labor": 43, "liberal": 38, "green": 15, "other": 4 }, "weighting": { "economy": 3, "social": 3, "taxes": 3, "climate": 3 } },
+    "New England": { "id": "path19365-0", "polling": { "labor": 7, "liberal": 53, "green": 3, "other": 37 }, "weighting": { "economy": -2, "social": -3, "taxes": -2, "climate": -3 } },
+    "Richmond": { "id": "path19535-3", "polling": { "labor": 31, "liberal": 38, "green": 20, "other": 11 }, "weighting": { "economy": -2, "social": 1, "taxes": -2, "climate": 2 } },
+    "Page": { "id": "path19450-0", "polling": { "labor": 35, "liberal": 44, "green": 11, "other": 20 }, "weighting": { "economy": -2, "social": -2, "taxes": -2, "climate": -3 } },
+    "Cowper": { "id": "path20-8-8", "polling": { "labor": 14, "liberal": 49, "green": 7, "other": 44 }, "weighting": { "economy": -1, "social": -1, "taxes": -2, "climate": -1 } },
+    "Lyne": { "id": "path48-9", "polling": { "labor": 27, "liberal": 50, "green": 10, "other": 13 }, "weighting": { "economy": -1, "social": -2, "taxes": -1, "climate": -0.2 } },
+    "Riverina": { "id": "path78-4-1", "polling": { "labor": 26, "liberal": 57, "green": 4, "other": 13 }, "weighting": { "economy": -3, "social": -3, "taxes": -2, "climate": -2 } },
+    "Farrer": { "id": "path28-4-2", "polling": { "labor": 18, "liberal": 58, "green": 8, "other": 16 }, "weighting": { "economy": -1, "social": -1, "taxes": -2, "climate": -0.5 } },
+    "Eden-Monaro": { "id": "path10055-7", "polling": { "labor": 42, "liberal": 41, "green": 8, "other": 9 }, "weighting": { "economy": 2, "social": -1, "taxes": -1, "climate": 1 } },
+    "Gilmore": { "id": "path4388-2", "polling": { "labor": 39, "liberal": 45, "green": 10, "other": 5 }, "weighting": { "economy": -2, "social": -1, "taxes": -1, "climate": -1 } }
 }

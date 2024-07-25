@@ -33,22 +33,22 @@ document.addEventListener("DOMContentLoaded", async function () {
             let seatName = seatNames[i]; // "grey"
             let pollData = gameState[seatName].polling;
             let weightData = gameState[seatName].weighting;
-            if (weightData.economy <= 1 && weightData.economy > 0) {
+            if (weightData.Economy <= 1 && weightData.Economy > 0) {
                 ideoLabel = "Slightly Liberal";
             }
-            if (weightData.economy < 0 && weightData.economy >= -1) {
+            if (weightData.Economy < 0 && weightData.Economy >= -1) {
                 ideoLabel = "Slightly Conservative";
             }
-            if (weightData.economy > 1 && weightData.economy <= 2) {
+            if (weightData.Economy > 1 && weightData.Economy <= 2) {
                 ideoLabel = "Liberal";
             }
-            if (weightData.economy < -1 && weightData.economy >= -2) {
+            if (weightData.Economy < -1 && weightData.Economy >= -2) {
                 ideoLabel = "Conservative";
             }
-            if (weightData.economy > 2 && weightData.economy <= 3) {
+            if (weightData.Economy > 2 && weightData.Economy <= 3) {
                 ideoLabel = "Very Liberal";
             }
-            if (weightData.economy < -2 && weightData.economy >= -3) {
+            if (weightData.Economy < -2 && weightData.Economy >= -3) {
                 ideoLabel = "Very Conservative";
             }
             if (id === gameState[seatName].id) {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 seatIDElement.innerText = seatName;
                 // var listPollData = Object.entries(pollData);
                 seatPollElement.innerText = `labor: ${pollData.labor}%\nliberal: ${pollData.liberal}%\nGreen: ${pollData.green}%\nOther: ${pollData.other}%`;
-                seatWeightElement.innerText = `economy: ${ideoLabel}\nsocial: ${weightData.social}\ntaxes: ${weightData.taxes}`;
+                seatWeightElement.innerText = `Economy: ${ideoLabel}\nSocial: ${weightData.Social}\nTaxes: ${weightData.Taxes}\nClimate: ${weightData.Climate}`;
             }
         }
     });
@@ -73,15 +73,15 @@ function openDialog() {
 }
 function openAnsDialog(buttonNumber) {
     let seatNames = Object.keys(gameState);
-    ideoEffect = quesData[questionCount].answers[buttonNumber].effect.economy;
-    socEffect = quesData[questionCount].answers[buttonNumber].effect.social;
-    affEffect = quesData[questionCount].answers[buttonNumber].effect.taxes;
+    ideoEffect = quesData[questionCount].answers[buttonNumber].effect.Economy;
+    socEffect = quesData[questionCount].answers[buttonNumber].effect.Social;
+    affEffect = quesData[questionCount].answers[buttonNumber].effect.Taxes;
     for (let i = 0; i < seatNames.length; i++) {
         let seatName = seatNames[i];
         let weightData = gameState[seatName].weighting;
-        ideoPollEffect = ideoEffect * weightData.economy;
-        socPollEffect = socEffect * weightData.social;
-        affPollEffect = affEffect * weightData.taxes;
+        ideoPollEffect = ideoEffect * weightData.Economy;
+        socPollEffect = socEffect * weightData.Social;
+        affPollEffect = affEffect * weightData.Taxes;
         let pollData = gameState[seatName].polling;
         pollChange = ideoPollEffect + socPollEffect + affPollEffect;
         pollData.labor = pollData.labor + pollChange;

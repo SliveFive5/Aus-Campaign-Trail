@@ -4,22 +4,22 @@
         "answers": {
             "one": {
                 "text": "Let's play it safe and stick to classic Labor policy, emphasising healthcare and childcare.",
-                "effect": { "economy": 0, "social": 0, "taxes": 0, "climate": 0 },
+                "effect": { "Economy": 0, "Social": 0, "Taxes": 0, "Climate": 0 },
                 "feedback": "This is a strong approach that appeals to the base, and to moderates unhappy with the government's performance over the last few years."
             },
             "two": {
-                "text": "We need to go on the offense, let's attack the LNP over the economy, healthcare and tax cuts to the wealthy.",
-                "effect": { "economy": 2, "social": -0.5, "taxes": -1 },
+                "text": "We need to go on the offense, let's attack the LNP over the Economy, healthcare and tax cuts to the wealthy.",
+                "effect": { "Economy": 2, "Social": -0.5, "Taxes": -1 },
                 "feedback": "While you're not the most charismatic, this strong attack helps solidify your line of attack against the liberals. Just remember to propose your own solutions."
             },
             "three": {
-                "text": "We need to take a bold & ambitious, left-wing approach. Let's talk about climate policy, and huge plans for healthcare and infrastructure.",
-                "effect": { "economy": -2, "social": -1, "taxes": -3 },
+                "text": "We need to take a bold & ambitious, left-wing approach. Let's talk about Climate policy, and huge plans for healthcare and infrastructure.",
+                "effect": { "Economy": -2, "Social": -1, "Taxes": -3 },
                 "feedback": "This plays great with greens supporters and other left-wingers, but some moderates are nervous about such large spending plans."
             },
             "four": {
                 "text": "Seize the opportunity, drone striking every liberal party member",
-                "effect": { "economy": 50, "social": 50, "taxes": 50 },
+                "effect": { "Economy": 50, "Social": 50, "Taxes": 50 },
                 "feedback": "YES SIR! GOD BLESS THE ETERNAL REGIME-PILLED REIGN OF FIRST CITIZEN ALBO"
             }
         }
@@ -29,22 +29,22 @@
         "answers": {
             "one": {
                 "text": "yes",
-                "effect": { "economy": 0, "social": 0, "taxes": 0 },
+                "effect": { "Economy": 0, "Social": 0, "Taxes": 0 },
                 "feedback": "thanks"
             },
             "two": {
                 "text": "how dare you! [order drone strike on the innocent civilians in afghanistan",
-                "effect": { "economy": 2, "social": -0.5, "taxes": -1 },
+                "effect": { "Economy": 2, "Social": -0.5, "Taxes": -1 },
                 "feedback": "[crowd goes fucking wild]"
             },
             "three": {
                 "text": "no",
-                "effect": { "economy": -2000, "social": -1000, "taxes": -30000 },
+                "effect": { "Economy": -2000, "Social": -1000, "Taxes": -30000 },
                 "feedback": "fuck off, you lose the election"
             },
             "four": {
                 "text": "yes!",
-                "effect": { "economy": 5000, "social": 50000, "taxes": 5000 },
+                "effect": { "Economy": 5000, "Social": 50000, "Taxes": 5000 },
                 "feedback": "thanks. Your supporters view this response as a little TOO keen, has drawn concern from moderate forces, but the folks here at 9 news certainly appreciated the fun night last night. in fact, this should improve your relationship with the press dramatically, and looks to spell a positive uptick in the polls later on."
             }
         }
@@ -54,22 +54,22 @@
         "answers": {
             "one": {
                 "text": "because she eats too much",
-                "effect": { "economy": 0, "social": -0, "taxes": 0 },
+                "effect": { "Economy": 0, "Social": -0, "Taxes": 0 },
                 "feedback": "that is racial profiling! the electorate now hates you you xenophobic bitch! she has a biological disorder that makes her naturally fat"
             },
             "two": {
                 "text": "Since i am not a health professional, I wouldn't want to comment on a specific circumstance, but I wish your mother a speedy recovery and I advise her to seek health advice.",
-                "effect": { "economy": 0, "social": -50000, "taxes": -0 },
+                "effect": { "Economy": 0, "Social": -50000, "Taxes": -0 },
                 "feedback": "you question dodging swine! people hate you"
             },
             "three": {
                 "text": "because she's the child of a neutron star",
-                "effect": { "economy": -2, "social": -1, "taxes": -3 },
+                "effect": { "Economy": -2, "Social": -1, "Taxes": -3 },
                 "feedback": "haha good one bitch! -10000 aura"
             },
             "four": {
                 "text": "fuck you",
-                "effect": { "economy": 50, "social": 50, "taxes": 50 },
+                "effect": { "Economy": 50, "Social": 50, "Taxes": 50 },
                 "feedback": "ok!"
             }
         }

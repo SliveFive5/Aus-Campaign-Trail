@@ -51,12 +51,66 @@ document.addEventListener("DOMContentLoaded", async function () {
             if (weightData.Economy < -2 && weightData.Economy >= -3) {
                 ideoLabel = "Very Conservative";
             }
+            if (weightData.Social <= 1 && weightData.Social > 0) {
+                ideoLabel = "Slightly Progressive";
+            }
+            if (weightData.Social < 0 && weightData.Social >= -1) {
+                ideoLabel = "Slightly Conservative";
+            }
+            if (weightData.Social > 1 && weightData.Social <= 2) {
+                socLabel = "Moderately Progressive";
+            }
+            if (weightData.Social < -1 && weightData.Social >= -2) {
+                socLabel = "Moderately Conservative";
+            }
+            if (weightData.Social > 2 && weightData.Social <= 3) {
+                socLabel = "Progressive";
+            }
+            if (weightData.Social < -2 && weightData.Social >= -3) {
+                socLabel = "Reactionary";
+            }
+            if (weightData.Taxes <= 1 && weightData.Taxes > 0) {
+                taxLabel = "Slightly Raise";
+            }
+            if (weightData.Taxes < 0 && weightData.Taxes >= -1) {
+                taxLabel = "Slightly Lower";
+            }
+            if (weightData.Taxes > 1 && weightData.Taxes <= 2) {
+                taxLabel = "Tax and Spend";
+            }
+            if (weightData.Taxes < -1 && weightData.Taxes >= -2) {
+                taxLabel = "Slash Taxes";
+            }
+            if (weightData.Taxes > 2 && weightData.Taxes <= 3) {
+                taxLabel = "Eat the Rich!";
+            }
+            if (weightData.Taxes < -2 && weightData.Taxes >= -3) {
+                taxLabel = "Thatcherite";
+            }
+            if (weightData.Climate <= 1 && weightData.Climate > 0) {
+                cliLabel = "Asks for Paper Straw";
+            }
+            if (weightData.Climate < 0 && weightData.Climate >= -1) {
+                cliLabel = "Ignores Recycling Bin";
+            }
+            if (weightData.Climate > 1 && weightData.Climate <= 2) {
+                cliLabel = "Concerned about Climate";
+            }
+            if (weightData.Climate < -1 && weightData.Climate >= -2) {
+                cliLabel = "Economy over Climate";
+            }
+            if (weightData.Climate > 2 && weightData.Climate <= 3) {
+                cliLabel = "Very Environmentalist";
+            }
+            if (weightData.Climate < -2 && weightData.Climate >= -3) {
+                cliLabel = "Hoax";
+            }
             if (id === gameState[seatName].id) {
                 // let seat = gameState[seatName];
                 seatIDElement.innerText = seatName;
                 // var listPollData = Object.entries(pollData);
                 seatPollElement.innerText = `labor: ${pollData.labor}%\nliberal: ${pollData.liberal}%\nGreen: ${pollData.green}%\nOther: ${pollData.other}%`;
-                seatWeightElement.innerText = `Economy: ${ideoLabel}\nSocial: ${weightData.Social}\nTaxes: ${weightData.Taxes}\nClimate: ${weightData.Climate}`;
+                seatWeightElement.innerText = `Economy: ${ideoLabel}\nSocial: ${socLabel}\nTaxes: ${taxLabel}\nClimate: ${cliLabel}`;
             }
         }
     });

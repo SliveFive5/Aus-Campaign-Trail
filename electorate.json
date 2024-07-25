@@ -112,5 +112,9 @@
     "Riverina": { "id": "path78-4-1", "polling": { "labor": 26, "liberal": 57, "green": 4, "other": 13 }, "weighting": { "economy": -3, "social": -3, "taxes": -2, "climate": -2 } },
     "Farrer": { "id": "path28-4-2", "polling": { "labor": 18, "liberal": 58, "green": 8, "other": 16 }, "weighting": { "economy": -1, "social": -1, "taxes": -2, "climate": -0.5 } },
     "Eden-Monaro": { "id": "path10055-7", "polling": { "labor": 42, "liberal": 41, "green": 8, "other": 9 }, "weighting": { "economy": 2, "social": -1, "taxes": -1, "climate": 1 } },
-    "Gilmore": { "id": "path4388-2", "polling": { "labor": 39, "liberal": 45, "green": 10, "other": 5 }, "weighting": { "economy": -2, "social": -1, "taxes": -1, "climate": -1 } }
+    "Gilmore": { "id": "path4388-2", "polling": { "labor": 39, "liberal": 45, "green": 10, "other": 5 }, "weighting": { "economy": -2, "social": -1, "taxes": -1, "climate": -1 } },
+    "Hume": { "id": "path12877-9", "polling": { "labor": 32, "liberal": 54, "green": 7, "other": 7 }, "weighting": { "economy": -2, "social": -1, "taxes": -2, "climate": -2 } },
+    "Calare": { "id": "path14-4-8", "polling": { "labor": 27, "liberal": 48, "green": 7, "other": 18 }, "weighting": { "economy": -2, "social": -1, "taxes": -2, "climate": -2 } },
+    "Hunter": { "id": "path42-2", "polling": { "labor": 52, "liberal": 26, "green": 7, "other": 15 }, "weighting": { "economy": 2, "social": 1, "taxes": 2, "climate": 2 } },
+    "Paterson": { "id": "path72-4", "polling": { "labor": 46, "liberal": 32, "green": 6, "other": 16 }, "weighting": { "economy": 3, "social": 1, "taxes": 2, "climate": 1 } }
 }

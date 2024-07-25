@@ -117,5 +117,13 @@
     "Calare": { "id": "path14-4-8", "polling": { "labor": 27, "liberal": 48, "green": 7, "other": 18 }, "weighting": { "economy": -2, "social": -1, "taxes": -2, "climate": -2 } },
     "Hunter": { "id": "path42-2", "polling": { "labor": 52, "liberal": 26, "green": 7, "other": 15 }, "weighting": { "economy": 2, "social": 1, "taxes": 2, "climate": 2 } },
     "Paterson": { "id": "path72-4", "polling": { "labor": 46, "liberal": 32, "green": 6, "other": 16 }, "weighting": { "economy": 3, "social": 1, "taxes": 2, "climate": 1 } },
-    "MacQuarie": { "id": "path3981-4", "polling": { "labor": 36, "liberal": 38, "green": 11, "other": 15 }, "weighting": { "economy": 1, "social": -1, "taxes": -1, "climate": 1 } }
+    "MacQuarie": { "id": "path3981-4", "polling": { "labor": 36, "liberal": 38, "green": 11, "other": 15 }, "weighting": { "economy": 1, "social": -1, "taxes": -1, "climate": 1 } },
+    "Newcastle": { "id": "path62-3", "polling": { "labor": 47, "liberal": 30, "green": 14, "other": 9 }, "weighting": { "economy": 2, "social": 2, "taxes": 1, "climate": 2 } },
+    "Shortland": { "id": "path82-7", "polling": { "labor": 51, "liberal": 35, "green": 9, "other": 5 }, "weighting": { "economy": 1, "social": 3, "taxes": 2, "climate": 2 } },
+    "Dobell": { "id": "path24-0", "polling": { "labor": 43, "liberal": 38, "green": 6, "other": 13 }, "weighting": { "economy": 1, "social": 2, "taxes": -1, "climate": -1 } },
+    "Robertson": { "id": "path3883-7", "polling": { "labor": 38, "liberal": 45, "green": 8, "other": 9 }, "weighting": { "economy": -1, "social": -1, "taxes": -1, "climate": -1 } },
+    "Whitlam": { "id": "path94-6-7", "polling": { "labor": 53, "liberal": 26, "green": 8, "other": 13 }, "weighting": { "economy": 2, "social": 1, "taxes": 2, "climate": 1 } },
+    "Berowra": { "id": "path3796-9", "polling": { "labor": 20, "liberal": 57, "green": 12, "other": 11 }, "weighting": { "economy": -2, "social": -2, "taxes": -1, "climate": 1 } },
+    "Mackellar": { "id": "path52-9", "polling": { "labor": 17, "liberal": 51, "green": 14, "other": 18 }, "weighting": { "economy": -1, "social": -1, "taxes": -1, "climate": 2 } },
+    "Bradfield": { "id": "path12-5", "polling": { "labor": 17, "liberal": 61, "green": 12, "other": 10 }, "weighting": { "economy": -2, "social": -1, "taxes": -3, "climate": -1 } }
 }

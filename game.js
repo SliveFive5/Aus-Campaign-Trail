@@ -1,5 +1,5 @@
 var quesData = null;
-let questionCount = 0;
+let questionCount = 1;
 const NUMBER_OF_QUESTIONS = 3;
 
 document.addEventListener("DOMContentLoaded", async function () {
@@ -154,7 +154,7 @@ function openAnsDialog(buttonNumber) {
     localStorage.setItem("campaign-trail-game-state", JSON.stringify(gameState));
 }
 function closeAnsDialog() {
-    updateDisplay();
+    questionCount = questionCount + 1;
     let seatNames = Object.keys(gameState);
     document.getElementById("answerButton1").disabled = null;
     document.getElementById("answerButton2").disabled = null;
@@ -191,7 +191,7 @@ function nextRound() {
         document.getElementById("visitHeader").hidden = true;
         let confirmDialog = document.getElementById("confirmation");
         confirmDialog.open = null;
-        // updateDisplay();
+        updateDisplay();
     } else {
         window.location = "electionDay.html";
     }
@@ -200,14 +200,12 @@ function closeConfDialog() {
     document.getElementById("confirmation").open = null;
 }
 function updateDisplay() {
-    questions = quesData;
-    questionCount = questionCount + 1;
     const jsTextQuestion = document.getElementById("textQuestion");
     jsTextQuestion.innerText = quesData[questionCount].question;
-    const jsTextAnswer1 = document.getElementById("answerButton1");
-    const jsTextAnswer2 = document.getElementById("answerButton2");
-    const jsTextAnswer3 = document.getElementById("answerButton3");
-    const jsTextAnswer4 = document.getElementById("answerButton4");
+    const jsTextAnswer1 = document.getElementById("answerButton1Lab");
+    const jsTextAnswer2 = document.getElementById("answerButton2Lab");
+    const jsTextAnswer3 = document.getElementById("answerButton3Lab");
+    const jsTextAnswer4 = document.getElementById("answerButton4Lab");
     jsTextAnswer1.innerText = quesData[questionCount].answers.one.text;
     jsTextAnswer2.innerText = quesData[questionCount].answers.two.text;
     jsTextAnswer3.innerText = quesData[questionCount].answers.three.text;

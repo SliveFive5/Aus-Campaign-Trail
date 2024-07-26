@@ -12,11 +12,19 @@
             <div class="backButton">
                 <button id="mapButton" autofocus onclick="closeDialog()">Map</button>
             </div>
-            <button id="answerButton1" onclick="openAnsDialog('one')"></button>
-            <button id="answerButton2" onclick="openAnsDialog('two')"></button>
-            <button id="answerButton3" onclick="openAnsDialog('three')"></button>
-            <button id="answerButton4" onclick="openAnsDialog('four')"></button>
-            <h1 id="textQuestion"></h1>
+            <div>
+                <input type="radio" class="answerButton" id="answerButton1" name="ansButt" onclick="openAnsDialog('one')"></input>
+                <label id="answerButton1Lab" for="answerButton1"></label>
+                <input type="radio" class="answerButton" id="answerButton2" name="ansButt" onclick="openAnsDialog('two')"></input>
+                <label id="answerButton2Lab" for="answerButton2"></label>
+                <input type="radio" class="answerButton" id="answerButton3" name="ansButt" onclick="openAnsDialog('three')"></input>
+                <label id="answerButton3Lab" for="answerButton3"></label>
+                <input type="radio" class="answerButton" id="answerButton4" name="ansButt" onclick="openAnsDialog('four')"></input>
+                <label id="answerButton4Lab" for="answerButton4"></label>
+            </div>
+            <div id="questionDiv">
+                <h1 id="textQuestion"></h1>
+            </div>
         </dialog>
         <dialog id="advisorFeedback" close style="width: 30%; height: 30%; z-index: 1">
             <span id="textFeedback"></span>

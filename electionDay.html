@@ -9,7 +9,27 @@
     </head>
     <body>
         <button id="endingButton" onclick="openResults()">Go to Results</button>
-        <dialog id="resultDialog" close></dialog>
+        <dialog id="resultDialog" close>
+            <span id="resultDialogSpan"></span>
+            <table id="resultTbl">
+                <caption>
+                    Overall Results
+                </caption>
+                <tr>
+                    <th>Labor</th>
+                    <th>Liberal</th>
+                    <th>Green</th>
+                    <th>Other</th>
+                </tr>
+                <tr>
+                    <td id="labTabCount"></td>
+                    <td id="libTabCount"></td>
+                    <td id="grnTabCount"></td>
+                    <td id="othTabCount"></td>
+                </tr>
+            </table>
+            <input />
+        </dialog>
         <svg
             width="669"
             height="505"
@@ -3677,5 +3697,10 @@
                 <rdf:RDF />
             </metadata>
         </svg>
+        <div class="infoBox">
+            <p id="seatName">Default</p>
+            <p id="pollData">Polling</p>
+            <p id="weightData">Weighting</p>
+        </div>
     </body>
 </html>

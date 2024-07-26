@@ -38,6 +38,9 @@
 h1 {
     font-size: 20px;
 }
+#questionDiv {
+    margin-right: 100;
+}
 #answerButton1 {
     position: fixed;
     bottom: 0;

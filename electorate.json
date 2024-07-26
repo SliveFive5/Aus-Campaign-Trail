@@ -153,5 +153,5 @@
     "Kingsford Smith": { "id": "path44-4", "polling": { "labor": 47, "liberal": 38, "green": 11, "other": 4 }, "weighting": { "Economy": 2, "Social": 3, "Taxes": 2, "Climate": 2, "general": 1 } },
     "Sydney": { "id": "path84-5", "polling": { "labor": 44, "liberal": 29, "green": 19, "other": 8 }, "weighting": { "Economy": 3, "Social": 3, "Taxes": 3, "Climate": 3, "general": 1 } },
     "Wentworth": { "id": "path90-4", "polling": { "labor": 18, "liberal": 62, "green": 15, "other": 5 }, "weighting": { "Economy": -2, "Social": 2, "Taxes": -2, "Climate": 1, "general": 1 } },
-    "Cook": { "id": "path18-4", "polling": { "labor": 27, "liberal": 58, "green": 7, "other": 8 }, "weighting": { "economy": -2, "social": -2, "taxes": -2, "climate": -2, "general": 1 } }
+    "Cook": { "id": "path18-4", "polling": { "labor": 27, "liberal": 58, "green": 7, "other": 8 }, "weighting": { "Economy": -2, "Social": -2, "Taxes": -2, "Climate": -2, "general": 1 } }
 }

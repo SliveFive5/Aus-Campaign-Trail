@@ -200,12 +200,41 @@ function closeConfDialog() {
     document.getElementById("confirmation").open = null;
 }
 function updateDisplay() {
+    let keys = Object.keys(gameState);
+    let list = keys.map((key) => {
+        let seat = gameState[key];
+        seat.name = key;
+        return seat;
+    });
+
+    const compareFn = (a, b) => {
+        // pick which is more marginal
+
+        if (a.polling.labor > a.polling.liberal && a.polling.labor > a.polling.other && a.polling.labor > a.polling.green) {
+            if (a.polling.labor > b.polling.labor) return -1;
+            else if (a.polling.labor < b.polling.labor) return 1;
+        } else if (a.polling.liberal > a.polling.labor && a.polling.liberal > a.polling.other && a.polling.liberal > a.polling.green) {
+            if (a.polling.liberal > b.polling.liberal) return -1;
+            else if (a.polling.liberal < b.polling.liberal) return 1;
+        } else if (a.polling.green > a.polling.labor && a.polling.green > a.polling.liberal && a.polling.green > a.polling.other) {
+            if (a.polling.labor > b.polling.labor) return -1;
+            else if (a.polling.labor < b.polling.labor) return 1;
+        } else if (a.polling.other > a.polling.labor && a.polling.other > a.polling.liberal && a.polling.other > a.polling.green) {
+            if (a.polling.labor > b.polling.labor) return -1;
+            else if (a.polling.labor < b.polling.labor) return 1;
+        }
+    };
+
+    let sorted = list.sort(compareFn);
+    let names = sorted.map((seat) => seat.name);
+    localStorage.setItem("marginal-seats", names);
+
     const jsTextQuestion = document.getElementById("textQuestion");
     jsTextQuestion.innerText = quesData[questionCount].question;
-    const jsTextAnswer1 = document.getElementById("answerButton1Lab");
-    const jsTextAnswer2 = document.getElementById("answerButton2Lab");
-    const jsTextAnswer3 = document.getElementById("answerButton3Lab");
-    const jsTextAnswer4 = document.getElementById("answerButton4Lab");
+    const jsTextAnswer1 = document.getElementById("answerButton1");
+    const jsTextAnswer2 = document.getElementById("answerButton2");
+    const jsTextAnswer3 = document.getElementById("answerButton3");
+    const jsTextAnswer4 = document.getElementById("answerButton4");
     jsTextAnswer1.innerText = quesData[questionCount].answers.one.text;
     jsTextAnswer2.innerText = quesData[questionCount].answers.two.text;
     jsTextAnswer3.innerText = quesData[questionCount].answers.three.text;
@@ -225,10 +254,10 @@ function updateDisplay() {
                 highestParty = partyName;
             }
         }
-        console.log(parties[highestParty]);
+        // console.log(parties[highestParty]);
         if (highestParty !== "green") {
             if (seatName === "Kennedy") {
-                console.log("Gone Through");
+                // console.log("Gone Through");
             }
             greenFlowedLabPref = polling.green * 0.82;
             greenFlowedLibPref = polling.green * 0.178;
@@ -242,7 +271,7 @@ function updateDisplay() {
             }
             if (polling.other > greenFlowedLib && polling.other > greenFlowedLab) {
                 highestParty = "other";
-                console.log("first other");
+                // console.log("first other");
             }
         }
         if (highestParty !== "other") {
@@ -252,15 +281,15 @@ function updateDisplay() {
             otherFlowedLib = greenFlowedLib + otherFlowedLibPref;
             if (otherFlowedLab > otherFlowedLib && otherFlowedLab > polling.green) {
                 highestParty = "labor";
-                console.log("second lab");
+                // console.log("second lab");
             }
             if (otherFlowedLib > polling.green && otherFlowedLib > otherFlowedLab) {
                 highestParty = "liberal";
-                console.log("second lib");
+                // console.log("second lib");
             }
             if (polling.green > otherFlowedLab && polling.green > otherFlowedLib) {
                 highestParty = "green";
-                console.log("second grn");
+                // console.log("second grn");
             }
         }
         marginColor = `${polling[highestParty]}%`;

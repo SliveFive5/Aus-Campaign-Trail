@@ -74,9 +74,22 @@ h1 {
     height: 200px;
 }
 #advisorFeedback {
-    position: fixed;
-    margin: auto;
+    left: 50%;
+    top: 42%;
+    right: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 #closeButton {
     margin: auto;
+}
+#confirmation {
+    position: absolute;
+    left: 10%;
+    top: 28%;
+    width: 30%;
+    height: 30%;
+}
+#textQuestion {
+    width: 90%;
 }

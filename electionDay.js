@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
     let raw = localStorage.getItem("campaign-trail-game-state");
     let gameState = JSON.parse(raw);
+    let marginalSeats = localStorage.getItem("marginal-seats");
+    arrMarginalSeats = marginalSeats.split(",");
 
     document.addEventListener("mouseover", (mouseover) => {
         let id = mouseover.target.id;
@@ -31,8 +33,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     });
     let seatNames = Object.keys(gameState); // [grey, lingiari]
-    for (let i = 0; i < seatNames.length; i++) {
-        let seatName = seatNames[i]; // "grey"
+    for (let i = 0; i < 151; i++) {
+        let seatName = arrMarginalSeats[i];
         let id = gameState[seatName]?.id;
         let seatElement = document.getElementById(id);
         let polling = gameState[seatName].polling;
@@ -86,32 +88,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (highestParty === "other") {
             otherCount += 1;
         }
-        marginColor = "100%";
-        if (polling[highestParty] >= 70) {
-            setTimeout(() => {
-                seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
-            }, 5000);
-        }
-        if (polling[highestParty] >= 60 && polling[highestParty] < 70) {
-            setTimeout(() => {
-                seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
-            }, 10000);
-        }
-        if (polling[highestParty] >= 50 && polling[highestParty] < 60) {
-            setTimeout(() => {
-                seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
-            }, 15000);
-        }
-        if (polling[highestParty] >= 40 && polling[highestParty] < 50) {
-            setTimeout(() => {
-                seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
-            }, 20000);
-        }
-        if (polling[highestParty] >= 33 && polling[highestParty] < 40) {
-            setTimeout(() => {
-                seatElement.style = `fill: ${parties[highestParty].colour}; filter: opacity(${marginColor})`;
-            }, 25000);
-        }
+        setTimeout(() => {
+            seatElement.style = `fill: ${parties[highestParty].colour};`;
+        }, 5000);
     }
 });
 function openResults() {

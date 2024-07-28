@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         }
     });
-    let seatNames = Object.keys(gameState); // [grey, lingiari]
+    timeoutNum = 1000;
     for (let i = 0; i < 151; i++) {
         let seatName = arrMarginalSeats[i];
         let id = gameState[seatName]?.id;
@@ -90,9 +90,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
         setTimeout(() => {
             seatElement.style = `fill: ${parties[highestParty].colour};`;
-        }, 5000);
+        }, timeoutNum);
+        timeoutNum = timeoutNum + 500;
     }
 });
+
 function openResults() {
     document.getElementById("labTabCount").innerText = laborCount;
     document.getElementById("libTabCount").innerText = liberalCount;

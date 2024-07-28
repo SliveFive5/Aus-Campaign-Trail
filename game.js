@@ -1,8 +1,11 @@
+// This is a game designed to simulate an election campaign.
+//Here, a number of hoisted variables are defined, necessary for the functions to work
 var quesData = null;
 let questionCount = 1;
 const NUMBER_OF_QUESTIONS = 3;
 
 document.addEventListener("DOMContentLoaded", async function () {
+    //All of the below actions will only take place once loaded
     parties = {
         labor: { leader: "Anthony Albanese", colour: "red" },
         liberal: { colour: "blue" },
@@ -15,10 +18,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     gameState = jsonData;
     let ques = await fetch("./question.json");
     quesData = await ques.json();
-    // only do this when the document is loadded
+    // These actions only take place when the JSON has loaded
     updateDisplay();
-    // gameState = { lingiari: { labor: 76, liberal: 23 }, grey: { labor: 45, liberal: 55 } }; // this will be updated as the game runs
-
+    // This initial updateDisplay serves to display tyhe initial position of the
     document.addEventListener("click", (event) => {
         console.log(event?.target?.id);
     });
@@ -151,6 +153,15 @@ function openAnsDialog(buttonNumber) {
     document.getElementById("answerButton4").disabled = true;
     document.getElementById("mapButton").disabled = true;
 
+    const te = new TextEncoder();
+    window.crypto.subtle.encrypt(
+        {
+            name: "AES-GCM",
+            iv
+        },
+        key,
+        te.encode(JSON.stringify(gameState))
+    );
     localStorage.setItem("campaign-trail-game-state", JSON.stringify(gameState));
 }
 function closeAnsDialog() {

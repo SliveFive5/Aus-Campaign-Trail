@@ -7,7 +7,8 @@ const NUMBER_OF_QUESTIONS = 3;
 document.addEventListener("DOMContentLoaded", async function () {
     //All of the below actions will only take place once loaded
     parties = {
-        labor: { leader: "Anthony Albanese", colour: "red" },
+        //Fairly self-explanatory, this sets the colours for use on the map
+        labor: { colour: "red" },
         liberal: { colour: "blue" },
         green: { colour: "lightgreen" },
         other: { colour: "purple" }
@@ -20,12 +21,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     quesData = await ques.json();
     // These actions only take place when the JSON has loaded
     updateDisplay();
-    // This initial updateDisplay serves to display tyhe initial position of the
-    document.addEventListener("click", (event) => {
-        console.log(event?.target?.id);
-    });
+    // This initial updateDisplay serves to display the initial data about the map
 
     document.addEventListener("mouseover", (mouseover) => {
+        //This event listener checks for the user hovering over a seat on the map so it can display the details for that seat
         let id = mouseover.target.id;
         const seatIDElement = document.getElementById("seatName");
         const seatPollElement = document.getElementById("pollData");
@@ -36,6 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             let pollData = gameState[seatName].polling;
             let weightData = gameState[seatName].weighting;
             if (weightData.Economy <= 1 && weightData.Economy > 0) {
+                //This code gives unique labels to the weightings based on their
                 ideoLabel = "Slightly Liberal";
             }
             if (weightData.Economy < 0 && weightData.Economy >= -1) {
@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 cliLabel = "Hoax";
             }
             if (id === gameState[seatName].id) {
+                //By checking if the ID of the hover matches any of the
                 // let seat = gameState[seatName];
                 seatIDElement.innerText = seatName;
                 // var listPollData = Object.entries(pollData);

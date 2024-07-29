@@ -25,7 +25,7 @@
         }
     },
     "2": {
-        "question": "can i fuck your mum?",
+        "question": "TESTQUESTION",
         "answers": {
             "one": {
                 "text": "yes",
@@ -33,44 +33,44 @@
                 "feedback": "thanks"
             },
             "two": {
-                "text": "how dare you! [order drone strike on the innocent civilians in afghanistan",
+                "text": "TESTRESPONSE",
                 "effect": { "Economy": 2, "Social": -0.5, "Taxes": -1 },
-                "feedback": "[crowd goes fucking wild]"
+                "feedback": "TESTRESPONSE"
             },
             "three": {
-                "text": "no",
+                "text": "b",
                 "effect": { "Economy": -2000, "Social": -1000, "Taxes": -30000 },
-                "feedback": "fuck off, you lose the election"
+                "feedback": "a"
             },
             "four": {
-                "text": "yes!",
+                "text": "a!",
                 "effect": { "Economy": 5000, "Social": 50000, "Taxes": 5000 },
-                "feedback": "thanks. Your supporters view this response as a little TOO keen, has drawn concern from moderate forces, but the folks here at 9 news certainly appreciated the fun night last night. in fact, this should improve your relationship with the press dramatically, and looks to spell a positive uptick in the polls later on."
+                "feedback": "v."
             }
         }
     },
     "3": {
-        "question": "why is my mum so fat?",
+        "question": "z?",
         "answers": {
             "one": {
-                "text": "because she eats too much",
+                "text": "c",
                 "effect": { "Economy": 0, "Social": -0, "Taxes": 0 },
-                "feedback": "that is racial profiling! the electorate now hates you you xenophobic bitch! she has a biological disorder that makes her naturally fat"
+                "feedback": "f"
             },
             "two": {
-                "text": "Since i am not a health professional, I wouldn't want to comment on a specific circumstance, but I wish your mother a speedy recovery and I advise her to seek health advice.",
+                "text": "w.",
                 "effect": { "Economy": 0, "Social": -50000, "Taxes": -0 },
-                "feedback": "you question dodging swine! people hate you"
+                "feedback": "c"
             },
             "three": {
-                "text": "because she's the child of a neutron star",
+                "text": "a",
                 "effect": { "Economy": -2, "Social": -1, "Taxes": -3 },
-                "feedback": "haha good one bitch! -10000 aura"
+                "feedback": "x"
             },
             "four": {
-                "text": "fuck you",
+                "text": "s",
                 "effect": { "Economy": 50, "Social": 50, "Taxes": 50 },
-                "feedback": "ok!"
+                "feedback": "b!"
             }
         }
     }

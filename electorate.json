@@ -114,7 +114,7 @@
     "Cowper": { "id": "path20-8-8", "polling": { "labor": 14, "liberal": 49, "green": 7, "other": 44 }, "weighting": { "Economy": -1, "Social": -1, "Taxes": -2, "Climate": -1, "general": 1 } },
     "Lyne": { "id": "path48-9", "polling": { "labor": 27, "liberal": 50, "green": 10, "other": 13 }, "weighting": { "Economy": -1, "Social": -2, "Taxes": -1, "Climate": -0.2, "general": 1 } },
     "Riverina": { "id": "path78-4-1", "polling": { "labor": 26, "liberal": 57, "green": 4, "other": 13 }, "weighting": { "Economy": -3, "Social": -3, "Taxes": -2, "Climate": -2, "general": 1 } },
-    "Farrer": { "id": "path28-4-2", "polling": { "labor": 18, "liberal": 58, "green": 8, "other": 16 }, "weighting": { "Economy": -1, "Social": -1, "Taxes": -2, "Climate": -1, "sgeneral": 1 } },
+    "Farrer": { "id": "path28-4-2", "polling": { "labor": 18, "liberal": 58, "green": 8, "other": 16 }, "weighting": { "Economy": -1, "Social": -1, "Taxes": -2, "Climate": -1, "general": 1 } },
     "Eden-Monaro": { "id": "path10055-7", "polling": { "labor": 42, "liberal": 41, "green": 8, "other": 9 }, "weighting": { "Economy": 2, "Social": -1, "Taxes": -1, "Climate": 1, "general": 1 } },
     "Gilmore": { "id": "path4388-2", "polling": { "labor": 39, "liberal": 45, "green": 10, "other": 5 }, "weighting": { "Economy": -2, "Social": -1, "Taxes": -1, "Climate": -1, "general": 1 } },
     "Hume": { "id": "path12877-9", "polling": { "labor": 32, "liberal": 54, "green": 7, "other": 7 }, "weighting": { "Economy": -2, "Social": -1, "Taxes": -2, "Climate": -2, "general": 1 } },

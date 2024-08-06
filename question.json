@@ -4,73 +4,204 @@
         "answers": {
             "one": {
                 "text": "Let's play it safe and stick to classic Labor policy, emphasising healthcare and childcare.",
-                "effect": { "Economy": 0, "Social": 0, "Taxes": 0, "Climate": 0 },
+                "effect": { "Economy": 0.5, "Social": 0.2, "Taxes": 0.25, "Climate": 0, "general": 0.1 },
                 "feedback": "This is a strong approach that appeals to the base, and to moderates unhappy with the government's performance over the last few years."
             },
             "two": {
                 "text": "We need to go on the offense, let's attack the LNP over the Economy, healthcare and tax cuts to the wealthy.",
-                "effect": { "Economy": 2, "Social": -0.5, "Taxes": -1 },
+                "effect": { "Economy": 0.2, "Social": 0.2, "Taxes": 0, "Climate": 0.1, "general": 0.05 },
                 "feedback": "While you're not the most charismatic, this strong attack helps solidify your line of attack against the liberals. Just remember to propose your own solutions."
             },
             "three": {
                 "text": "We need to take a bold & ambitious, left-wing approach. Let's talk about Climate policy, and huge plans for healthcare and infrastructure.",
-                "effect": { "Economy": -2, "Social": -1, "Taxes": -3 },
+                "effect": { "Economy": 0.7, "Social": 0.4, "Taxes": -0.6, "Climate": 0.6, "general": -0.05 },
                 "feedback": "This plays great with greens supporters and other left-wingers, but some moderates are nervous about such large spending plans."
             },
             "four": {
-                "text": "Seize the opportunity, drone striking every liberal party member",
-                "effect": { "Economy": 50, "Social": 50, "Taxes": 50 },
-                "feedback": "YES SIR! GOD BLESS THE ETERNAL REGIME-PILLED REIGN OF FIRST CITIZEN ALBO"
+                "text": "Let's try and win over moderates and conservatives by setting a very moderate tone for the campaign.",
+                "effect": { "Economy": -0.4, "Social": -0.3, "Taxes": -0.3, "Climate": 0.2, "general": -0.1 },
+                "feedback": "While some moderates and conservatives appreciate your explicit appeal, the base is getting a little nervous at these comments."
             }
         }
     },
     "2": {
-        "question": "TESTQUESTION",
+        "question": "In the first big event of election season, the Coalition has delivered their budget. It involves several tax cuts, for the wealthy and for lower-income workers, and includes some concessions to healthcare and education. Early signs are worrying, and show that this budget has been decently recieved by the public. How will you combat it?",
         "answers": {
             "one": {
-                "text": "yes",
-                "effect": { "Economy": 0, "Social": 0, "Taxes": 0 },
-                "feedback": "thanks"
+                "text": "Let's attack them for cutting schools and hospitals by $16.8 billion, and promise to restore those numbers as well as adding new programs for cancer patients.",
+                "effect": { "Economy": 0.3, "Social": 0, "Taxes": -0.02, "Climate": 0.1, "general": 0.06 },
+                "feedback": "This will help dull their fiscal moderate perception, but the budget is still quite well received. "
             },
             "two": {
-                "text": "TESTRESPONSE",
-                "effect": { "Economy": 2, "Social": -0.5, "Taxes": -1 },
-                "feedback": "TESTRESPONSE"
+                "text": "We need to focus on the tax cuts for the wealthy, attack the budget for favouring the rich and promise to raise taxes on high-income brackets when in office.",
+                "effect": { "Economy": 0.2, "Social": 0.2, "Taxes": -0.5, "Climate": 0.1, "general": 0.03 },
+                "feedback": "While tax hikes on the wealthy are broadly popular, talk of raising taxes makes some moderates raise their eyebrows nonetheless."
             },
             "three": {
-                "text": "b",
-                "effect": { "Economy": -2000, "Social": -1000, "Taxes": -30000 },
-                "feedback": "a"
+                "text": "Let's develop an ambitious counter-budget, which will include higher spending on healthcare, schools, renewable energy, infrastructure, and other worthy causes.",
+                "effect": { "Economy": 0.4, "Social": 0, "Taxes": 0.2, "Climate": 0.1, "general": 0.1 },
+                "feedback": "Smart move. This budget gets a lot of attention and helps give people the impression you are responsible financial managers."
             },
             "four": {
-                "text": "a!",
-                "effect": { "Economy": 5000, "Social": 50000, "Taxes": 5000 },
-                "feedback": "v."
+                "text": "We can outflank this budget to the right and attack it for being fiscally irresponsible. Promise, if elected, to create a carefully balanced budget, even if that requires some cuts.",
+                "effect": {
+                    "Economy": -0.3,
+                    "Social": 0,
+                    "Taxes": -0.3,
+                    "Climate": 0,
+                    "general": -0.1
+                },
+                "feedback": "This was a bad move. Your base is outraged, and many start looking more favourably at the greens. However, some conservatives start looking at you differently."
             }
         }
     },
     "3": {
-        "question": "z?",
+        "question": "The Coalition has been telling the press that they have it on Treasury advice that you plan to raise taxes by $387 billion over a decade. This is not, however, true. How do you respond?",
         "answers": {
             "one": {
-                "text": "c",
-                "effect": { "Economy": 0, "Social": -0, "Taxes": 0 },
-                "feedback": "f"
+                "text": "This attack is so blatantly untrue, the Australian people are sure to see through it. Don't dignify it with a response.",
+                "effect": { "Economy": 0, "Social": 0, "Taxes": -0.3, "Climate": 0, "general": -0.1 },
+                "feedback": "Unfortunately, this has the opposite of the intended effect. Despite factchecking, many take the Coalition at their word."
             },
             "two": {
-                "text": "w.",
-                "effect": { "Economy": 0, "Social": -50000, "Taxes": -0 },
-                "feedback": "c"
+                "text": "We should double down on that policy and focus on our plans to raise taxes on the rich.",
+                "effect": { "Economy": 0.1, "Social": 0, "Taxes": 0.3, "Climate": 0, "general": -0.08 },
+                "feedback": "While framing it as a progressive tax helps, the political climate really doesn't welcome taxes at the moment."
             },
             "three": {
-                "text": "a",
-                "effect": { "Economy": -2, "Social": -1, "Taxes": -3 },
-                "feedback": "x"
+                "text": "This is blatant lie and we need to make the Australian people aware of that fact. Book several press conferences refuting this falsehood.",
+                "effect": { "Economy": 0, "Social": 0, "Taxes": 0.1, "Climate": 0, "general": 0.05 },
+                "feedback": "A firm denouncement and counterattack is probably the best you can do in this situation."
             },
             "four": {
-                "text": "s",
-                "effect": { "Economy": 50, "Social": 50, "Taxes": 50 },
-                "feedback": "b!"
+                "text": "We should turn the tables and immediately launch into an attack on Liberal cuts to healthcare and the like!",
+                "effect": { "Economy": 0.07, "Social": 0, "Taxes": -0.6, "Climate": 0, "general": 0.02 },
+                "feedback": "This aggressive approach negates some of the damage, but the open question of your tax position will continue to haunt the campaign."
+            }
+        }
+    },
+    "4": {
+        "question": "The climate has become an increasingly cogent issue over the past years. The controversy over the expansion of Adani, and the subsequent outrage from the Greens, has brought this issue to the national forefront. How does the Labor party respond to these ever louder cries?",
+        "answers": {
+            "one": {
+                "text": "The future of the Labor Party is as the party of climate. We need to take a firm stand and make the election a referendum on the climate.",
+                "effect": { "Economy": 0, "Social": 0, "Taxes": -0.2, "Climate": 0.1, "general": 0.05 },
+                "feedback": "This is the expected move, and although you fail to shift the election meaningfully towards climate, this is a smart long term move that help Labor as climate change gets worse."
+            },
+            "two": {
+                "text": "We need to take the middle road, and project a message of firm action that keeps jobs in marginal seats.",
+                "effect": { "Economy": -0.2, "Social": 0, "Taxes": -0.2, "Climate": 0, "general": 0.08 },
+                "feedback": "While too moderate for most of your base, this stance will help you in key, coal-rich seats."
+            },
+            "three": {
+                "text": "We should focus on attacking their policies while keeping our stance relatively vague.",
+                "effect": { "Economy": 0, "Social": 0, "Taxes": 0, "Climate": 0.3, "general": 0.04 },
+                "feedback": "Your vague position concerns the environmentalists in your party, but on the whole this strategy is effective at discrediting the Liberals."
+            },
+            "four": {
+                "text": "We need to tack right on climate to keep key seats. Talk about slow and steady progress and placing the health of the economy over progress.",
+                "effect": { "Economy": -0.8, "Social": -0.1, "Taxes": -0.9, "Climate": -0.4, "general": -0.08 },
+                "feedback": "Large portions of your base consider this an outright betrayal of their interests and choices, and are furious at you. You do, however, see a strong improvement in coal country."
+            }
+        }
+    },
+    "5": {
+        "question": "Bearing the name of what would become the Liberal Party, the United Australia Party, funded by mining billionare Clive Palmer, has emeregd onto the political scene and has started spending big to help the Liberals. What's your response?",
+        "answers": {
+            "one": {
+                "text": "We can actually use this to our advantage. By tying the hard right UAP to the Liberals, we can hurt them in key demographics.",
+                "effect": { "Economy": 0, "Social": 0.6, "Taxes": 0, "Climate": 0.5, "general": 0.1 },
+                "feedback": "This is a smart move, and helps to discredit the Liberal claim of being moderate, especially when you point out their preference flow deal."
+            },
+            "two": {
+                "text": "We should just try to avoid mentioning them or bringing more attention to their ideas. ",
+                "effect": { "Economy": 0, "Social": 0, "Taxes": 0, "Climate": 0, "general": -0.1 },
+                "feedback": "While this might work in America, it's not such a viable strategy here. Without pushback, the UAP continues to grow..."
+            },
+            "three": {
+                "text": "We need to go on the offensive against them, attacking them constantly over their lies and radical policies.",
+                "effect": { "Economy": 0.5, "Social": 0.1, "Taxes": 0, "Climate": 0.3, "general": 0.04 },
+                "feedback": "This strong approach helps win back support, but it also takes focus away from your real opponent, the Liberals."
+            },
+            "four": {
+                "text": "To win over voters swayed by their rhetoric, we need to respond in kind. We need to adopt more populist rhetoric and policy ourselves.",
+                "effect": { "Economy": -0.3, "Social": 0, "Taxes": -0.2, "Climate": -0.2, "general": -0.06 },
+                "feedback": "Much of your base is confused by this change, having viewed you as a more sensible option up until now. However, a few populist minded voters come over to your side."
+            }
+        }
+    },
+    "6": {
+        "question": "What will be your approach in the upcoming debate?",
+        "answers": {
+            "one": {
+                "text": "We need to take the high ground. Focus on policy and dismiss any attacks.",
+                "effect": { "Economy": 0.2, "Social": 0.2, "Taxes": 0, "Climate": 0.1, "general": -0.03 },
+                "feedback": "This approach backfired in a big way. You come off as aloof as Morrison hammers you on key issues."
+            },
+            "two": {
+                "text": "We need to be aggressive at this point in the election. Attack Morrison on Climate Change and his relationship with the UAP.",
+                "effect": { "Economy": 0.1, "Social": 0, "Taxes": 0.2, "Climate": 0.2, "general": 0.01 },
+                "feedback": "You stumble somewhat with such an aggressive approach, but this show of strength definitely helps you with Greens voters and even some moderates."
+            },
+            "three": {
+                "text": "Let's mostly focus on ourselves, but make sure to get some good attacking soundbites out of it.",
+                "effect": { "Economy": 0.5, "Social": 0.8, "Taxes": 0, "Climate": 0, "general": 0.06 },
+                "feedback": "This works out quite well, and you get a well-reported moment when you call Morrison a 'Space Invader'."
+            },
+            "four": {
+                "text": "We need to take a populist approach that will win over average Australians.",
+                "effect": { "Economy": -0.3, "Social": -0.1, "Taxes": -0.1, "Climate": -0.1, "general": -0.06 },
+                "feedback": "Sorry Bill, but you don't have what it takes to pull of this kind of approach. You stumble and your attempt at being a firebrand fall completely short."
+            }
+        }
+    },
+    "7": {
+        "question": "Despite your efforts, the campaign seems to be struggling to appeal to the Australian people. What should we focus on as the election draws nearer?",
+        "answers": {
+            "one": {
+                "text": "We need to announce a new raft of spending policies, such as $4 billion in Childcare, and significant increases in pensioner funding.",
+                "effect": { "Economy": 0.1, "Social": 0, "Taxes": -0.1, "Climate": 0, "general": -0.04 },
+                "feedback": "These plans come too late in the campaign to properly sell, and just contribute to the image of Labor being unsteady financial managers."
+            },
+            "two": {
+                "text": "We should focus on the flaws of the Liberal party, specifically the disunity that lead to Scott Morrison coming to the top, as well their ties with the UAP.",
+                "effect": { "Economy": 0, "Social": 0.5, "Taxes": 0, "Climate": 0, "general": 0.07 },
+                "feedback": "This helps reopen old wounds in the Liberal Party, but some fear this sort of attack won't appeal to more pragmatic voters."
+            },
+            "three": {
+                "text": "We should attack the Liberal Party for inaction on Climate and key social issues, and announce a slate of policies addressing those areas.",
+                "effect": { "Economy": 0, "Social": 0.1, "Taxes": 0, "Climate": 0.1, "general": 0.03 },
+                "feedback": "This has revitalised youth and progressive support for your campaign, but some wonder if that will be enough."
+            },
+            "four": {
+                "text": "Let's just keep attacking the Liberals for cutting key services.",
+                "effect": { "Economy": 0.3, "Social": 0.1, "Taxes": 0.1, "Climate": 0, "general": 0.01 },
+                "feedback": "This attack, while potent, is beginning to get old, and is no longer winning over many new voters."
+            }
+        }
+    },
+    "8": {
+        "question": "As the campaign comes to an end, what the is the message you want voters to be going to the polls with?",
+        "answers": {
+            "one": {
+                "text": "The Liberals will cut everything critical in this nation and make life harder for the middle class. Vote Labor to stop that.",
+                "effect": { "Economy": 0.5, "Social": 0, "Taxes": 0.3, "Climate": 0, "general": 0.05 },
+                "feedback": "With that, the polls close and election night begins."
+            },
+            "two": {
+                "text": "The Liberals will stop progress on social issues and on the climate. It's time for a change!",
+                "effect": { "Economy": 0, "Social": 0.5, "Taxes": 0, "Climate": 0.5, "general": 0.05 },
+                "feedback": "With that, the polls close and election night begins."
+            },
+            "three": {
+                "text": "We're going to bring back good, cheap childcare, fix medicare, and lower cost of living for all Australians!",
+                "effect": { "Economy": 0.1, "Social": 0.1, "Taxes": -0.3, "Climate": 0, "general": 0.05 },
+                "feedback": "With that, the polls close and election night begins."
+            },
+            "four": {
+                "text": "We are a sensible, moderate alternative to the Liberal party's extremism and disunity.",
+                "effect": { "Economy": -0.3, "Social": -0.5, "Taxes": 0, "Climate": -0.1, "general": 0.05 },
+                "feedback": "With that, the polls close and election night begins."
             }
         }
     }
